@@ -86,7 +86,8 @@ def methodFromJonas(batch_size, test_series_path):
 
         if len(batch) >= batch_size:
             yield batch
-            del batch
+            batch = pd.DataFrame([])  # because of unbound error
+            #del batch
     yield batch
 
 
@@ -266,7 +267,10 @@ def heuristic_function(df):
 
     # step 12: reset index
     df.reset_index(drop=True, inplace=True)
-    df['row_id'] = df.reset_index().index
+    #df['row_id'] = df.reset_index().index # i have to do this at the end
+    
+    # step 13 floats for score
+    df['score'] = df['score'].astype(float)
 
     return df
 
