@@ -1,7 +1,10 @@
 .DS_Store
 data/*
+plots/
 __pycache__/
 *.pkl
 *.csv
 *.jlb
+*.svg
+*.png
 !data/gitkeep
