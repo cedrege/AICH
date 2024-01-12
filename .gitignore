@@ -1,5 +1,4 @@
 .DS_Store
-data/*
 plots/
 __pycache__/
 *.pkl
@@ -7,4 +6,6 @@ __pycache__/
 *.jlb
 *.svg
 *.png
-!data/gitkeep
+*.parquet
+data/OLD_DATA/
+data/train_events.csv
