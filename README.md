@@ -13,7 +13,7 @@ Folge diesen Schritten, um den Code auszuführen:
    git clone https://github.com/cedrege/AICH.git
    ```
 2. Lade die Wettbewerbsdaten von [hier](https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/data) herunter und platziere sie im Verzeichnis ./data des geklonten Repositories.
-3. Führe das Feature-Engineering-Notebook unter `./code/XXX` aus. Dieses Notebook erstellt die für das Training des Modells benötigten Datensätze aus den Competition-Daten.
-4. Trainiere die verschiedenen Modelle mithilfe des Notebooks unter `./code/YYY`.
+3. Führe das Feature-Engineering-Notebook unter `./code/03_Feature_Engineering.ipynb` aus. Dieses Notebook erstellt die für das Training des Modells benötigten Datensätze aus den Competition-Daten.
+4. Trainiere die verschiedenen Modelle mithilfe des Notebooks unter `./code/06_Model_Training.ipynb`.
    * Das Notebook enthält Anweisungen dazu, entweder das beste Modell oder alle Modelle zu trainieren.
 5. Abschliessend, um Ereignisse mithilfe der lokalen Scoring-Funktion der Competition zu extrahieren, führe das Notebook `./code/submission.ipynb` aus.
